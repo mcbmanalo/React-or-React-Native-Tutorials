@@ -1,12 +1,11 @@
 import React from 'react'
 
-const Greet = (props) => {
-    console.log(props)
+const Greet = props => {
+    const {name, alias} = props
     
     return (
         <div>
-            <h1>{props.name}</h1>
-            {props.children}
+            <h1>{name} is an {alias}</h1>
         </div>
     )
 }
