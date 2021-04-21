@@ -26,21 +26,40 @@ class UserGreeting extends Component {
     }
     
     render() {
+
+        let message
         if (this.state.isLoggedIn) {
-            return (
+            message = (
                 <div>
                     <div>Welcome!</div>
                     <button onClick={this.logout}>Log out</button>
                 </div>
             )
         } else {
-            return (
+            message = (
                 <div>
                     <div>You're a guest!</div>
                     <button onClick={this.login}>Log in</button>
                 </div>
             )
         }
+
+        return message
+        // if (this.state.isLoggedIn) {
+        //     return (
+        //         <div>
+        //             <div>Welcome!</div>
+        //             <button onClick={this.logout}>Log out</button>
+        //         </div>
+        //     )
+        // } else {
+        //     return (
+        //         <div>
+        //             <div>You're a guest!</div>
+        //             <button onClick={this.login}>Log in</button>
+        //         </div>
+        //     )
+        // }
     }
 }
 
