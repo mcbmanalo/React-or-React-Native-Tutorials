@@ -9,15 +9,20 @@ class EventBind extends Component {
              message: 'Hello!'
         }
 
-        this.clickHandler = this.clickHandler.bind(this)
+        // this.clickHandler = this.clickHandler.bind(this)
     }
     
-    clickHandler() {
+    // clickHandler() {
+    //     this.setState({
+    //         message: 'You clicked the button'
+    //     })
+    // }
+
+    clickHandler = () => {
         this.setState({
-            message: 'You clicked the button'
+            message: "You clicked the button!"
         })
     }
-
     render() {
         return (
             <div>
