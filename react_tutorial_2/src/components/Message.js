@@ -8,8 +8,19 @@ class Message extends Component {
         }
     }
 
+    changeMessage() {
+        this.setState({
+            message:'You clicked the button!'
+        })
+    }
+
     render() {
-        return <h1>{this.state.message}</h1>
+        return (
+            <div>
+                <h1>{this.state.message}</h1>
+                <button onClick={() => this.changeMessage()}>Subscribe</button>
+            </div>
+        )
     }
 }
 
