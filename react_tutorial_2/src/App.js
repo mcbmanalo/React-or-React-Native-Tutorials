@@ -12,6 +12,9 @@ function App() {
       </Greet>
       <Greet name="Maj"></Greet>
       <Greet name="Marco"></Greet> 
+      <Welcome name="Carms"></Welcome>
+      <Welcome name="Maj"></Welcome>
+      <Welcome name="Marco"></Welcome>
     </div>
   );
 }
