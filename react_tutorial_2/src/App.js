@@ -10,7 +10,8 @@ function App() {
   return (
     <div className="App">
       {/* <Counter></Counter> */}
-      <Greet name="Carms" alias="ASTRO fan"></Greet>
+      <Greet name="Carms" alias="ASTRO fan"/>
+      <Welcome name="Carms" alias="ASTRO fan"/>
     </div>
   );
 }
