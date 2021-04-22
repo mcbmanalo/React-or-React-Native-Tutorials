@@ -5,8 +5,8 @@ class Form extends Component {
         super(props)
     
         this.state = {
-             username: '',
-             comments: '',
+             email: '',
+             firstName: '',
              topic: 'react'
         }
     }
@@ -45,7 +45,7 @@ class Form extends Component {
                 onChange={this.handleUsernameChange}/>
             
                 <div>
-                    <label>Comments</label>
+                    <label>Email</label>
                     <textarea 
                         value={comments}
                         onChange={this.handleCommentsChange}></textarea>
