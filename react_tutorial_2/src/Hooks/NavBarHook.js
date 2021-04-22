@@ -3,7 +3,6 @@ import React from 'react'
 function NavBarHook() {
     return (
         <nav>
-            NavBar
             <a href="/">Home</a>
             <a href="/">Are you a...</a>
             <a href="/">Free SafeWire Trial</a>
