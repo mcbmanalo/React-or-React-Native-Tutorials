@@ -13,11 +13,13 @@ import UserGreeting from './components/UserGreeting';
 import NameList from './components/NameList';
 import Form from './components/Form';
 import HookForm from './Hooks/HookForm';
+import NavBarHook from './Hooks/NavBarHook';
 
 function App() {
   return (
     <div className="App">
-      <HookForm/>
+      <NavBarHook/>
+      {/* <HookForm/> */}
       {/* <Form/> */}
       {/* <NameList/> */}
       {/* <UserGreeting/> */}
