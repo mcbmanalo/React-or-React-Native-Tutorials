@@ -18,10 +18,10 @@ import NavBarHook from './Hooks/NavBarHook';
 function App() {
   return (
     <div className="App">
-      <NavBarHook/>
+      {/* <NavBarHook/> */}
       {/* <HookForm/> */}
       {/* <Form/> */}
-      {/* <NameList/> */}
+      <NameList/>
       {/* <UserGreeting/> */}
       {/* <ParentComponent/> */}
       {/* <EventBind/> */}
