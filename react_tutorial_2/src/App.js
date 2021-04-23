@@ -15,12 +15,24 @@ import Form from './components/Form';
 import HookForm from './Hooks/HookForm';
 import NavBarHook from './Hooks/NavBarHook';
 import Navbar2 from './Hooks/Navbar2';
-import { BrowserRouter as Router } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import Home from './Hooks/pages/Home'
+import Services from './Hooks/pages/Services'
+import Blog from './Hooks/pages/Blog'
+import Help from './Hooks/pages/Help'
+import SignUp from './Hooks/pages/SignUp'
 
 function App() {
   return (
     <Router className="App">
       <Navbar2/>
+      <Switch>
+        <Route path='/' exact component={Home}/>
+        <Route path='/services' exact component={Services}/>
+        <Route path='/blog' exact component={Blog}/>
+        <Route path='/help' exact component={Help}/>
+        <Route path='/signup' exact component={SignUp}/>
+      </Switch>
       {/* <NavBarHook/> */}
       {/* <HookForm/> */}
       {/* <Form/> */}
