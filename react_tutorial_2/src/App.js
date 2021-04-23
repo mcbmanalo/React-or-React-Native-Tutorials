@@ -14,13 +14,16 @@ import NameList from './components/NameList';
 import Form from './components/Form';
 import HookForm from './Hooks/HookForm';
 import NavBarHook from './Hooks/NavBarHook';
+import Navbar2 from './Hooks/Navbar2';
+import { BrowserRouter as Router } from 'react-router-dom'
 
 function App() {
   return (
-    <div className="App">
+    <Router className="App">
+      <Navbar2/>
       {/* <NavBarHook/> */}
       {/* <HookForm/> */}
-      <Form/>
+      {/* <Form/> */}
       {/* <NameList/> */}
       {/* <UserGreeting/> */}
       {/* <ParentComponent/> */}
@@ -30,7 +33,7 @@ function App() {
       {/* <Counter></Counter> */}
       {/* <Greet name="Carms" alias="ASTRO fan"/> */}
       {/* <Welcome name="Carms" alias="ASTRO fan"/> */}
-    </div>
+    </Router>
   );
 }
 
