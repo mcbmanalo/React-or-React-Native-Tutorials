@@ -38,28 +38,36 @@ class Form extends Component {
 
         return (
             <form onSubmit={this.handleSubmit}>
-                <label>Username</label>
-                <input 
-                type="text" 
-                value={username} 
-                onChange={this.handleUsernameChange}/>
-            
+                <div>
+                    <label>Username</label>
+                    <div>
+                        <input 
+                        type="text" 
+                        value={username} 
+                        onChange={this.handleUsernameChange}/>
+                    </div>
+                </div>
+                
                 <div>
                     <label>Email</label>
-                    <textarea 
-                        value={comments}
-                        onChange={this.handleCommentsChange}></textarea>
+                    <div>
+                        <textarea 
+                            value={comments}
+                            onChange={this.handleCommentsChange}></textarea>
+                    </div>
                 </div>
             
                 <div>
                     <label>Topic</label>
+                    <div>
                     <select 
                         value={topic} 
                         onChange={this.handleTopicsChange}>
                             <option value="react">React</option>
                             <option value="angular">Angular</option>
                             <option value="vue">Vue</option>
-                        </select>
+                    </select>
+                    </div>
                 </div>
 
                 <button>Click me!</button>

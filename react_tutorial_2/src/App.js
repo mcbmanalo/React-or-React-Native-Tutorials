@@ -20,8 +20,8 @@ function App() {
     <div className="App">
       {/* <NavBarHook/> */}
       {/* <HookForm/> */}
-      {/* <Form/> */}
-      <NameList/>
+      <Form/>
+      {/* <NameList/> */}
       {/* <UserGreeting/> */}
       {/* <ParentComponent/> */}
       {/* <EventBind/> */}
