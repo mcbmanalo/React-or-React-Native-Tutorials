@@ -21,6 +21,7 @@ import Services from './Hooks/pages/Services'
 import Blog from './Hooks/pages/Blog'
 import Help from './Hooks/pages/Help'
 import SignUp from './Hooks/pages/SignUp'
+import Users from './Hooks/pages/Users';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <Route path='/blog' exact component={Blog}/>
         <Route path='/help' exact component={Help}/>
         <Route path='/signup' exact component={SignUp}/>
+        <Route path='/users' exact component={Users}/>
       </Switch>
       {/* <NavBarHook/> */}
       {/* <HookForm/> */}
