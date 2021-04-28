@@ -5,7 +5,7 @@ const Field = props => {
         <div>
             <label>{props.fieldTitle}</label>
             <input 
-                type="text"
+                type={props.fieldType}
                 value={props.fieldValue}
                 onChange={(event) => props.onChange(event.target.value)}></input>
         </div>
