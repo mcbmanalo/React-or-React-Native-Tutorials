@@ -23,6 +23,7 @@ import Help from './Hooks/pages/Help'
 import SignUp from './Hooks/pages/SignUp'
 import Users from './Hooks/pages/Users';
 import AddUser from './Hooks/pages/AddUser';
+import Admin from './Hooks/pages/Admin';
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
         <Route path='/signup' exact component={SignUp}/>
         <Route path='/users' exact component={Users}/>
         <Route path='/add_user' exact component={AddUser}/>
+        <Route path='/admin_tool' exact component={Admin}/>
       </Switch>
       {/* <NavBarHook/> */}
       {/* <HookForm/> */}
