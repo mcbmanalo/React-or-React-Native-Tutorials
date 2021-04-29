@@ -69,6 +69,12 @@ function Navbar2() {
                         Users
                     </Link>
                 </li>
+
+                <li>
+                    <Link to='/admin_tool' onClick={closeMobileMenu}>
+                        Admin
+                    </Link>
+                </li>
                 
             </ul>
             <HookButton/>
